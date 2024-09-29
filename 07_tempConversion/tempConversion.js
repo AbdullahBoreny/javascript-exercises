@@ -4,7 +4,7 @@ const convertToCelsius = function(value) {
 };
 
 const convertToFahrenheit = function(value) {
-  let fah = (value * 9/5) + 32;
+  let fah = Math.round(((value * 9/5) + 32)*10) / 10; 
   return fah;
 };
 
